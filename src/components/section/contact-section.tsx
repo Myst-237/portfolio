@@ -24,8 +24,8 @@ export default function ContactSection() {
           Get in Touch
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          I&apos;m open to software architecture and senior engineering roles
-          in Canada and remote. Email me at{" "}
+          I&apos;m open to full-time engineering roles and contract work,
+          remote or on-site, anywhere in the world. Email me at{" "}
           <Link
             href={`mailto:${DATA.contact.email}`}
             className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
