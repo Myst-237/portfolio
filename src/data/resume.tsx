@@ -15,9 +15,9 @@ export const DATA = {
   location: "Yaoundé, Cameroon",
   locationLink: "https://www.google.com/maps/place/Yaound%C3%A9",
   description:
-    "Technical co-founder and software architect. I build trading infrastructure, distributed systems on AWS, and products people pay for.",
+    "Software engineer and architect. I build fast, reliable systems on AWS, from low-latency trading engines to products people pay for.",
   summary:
-    "I'm a software architect and technical co-founder with a [Master of Engineering in Computer Software Engineering](/#education) from the École Nationale Supérieure Polytechnique de Yaoundé.\n\nIn 2023 I co-founded [OddsFantasy](https://oddsfantasy.com), a trading terminal for sports prediction markets. I designed its serverless microservices architecture on AWS, built a sub-600 ms execution engine with automated take-profit and stop-loss, and lead a team of five. Alongside it we run [OddsFantasy Prop](https://trade.oddsfantasy.com), a prop firm for prediction-market traders, and I also co-founded [Ofidely](https://ofidely.com), a loyalty program and WhatsApp CRM for local businesses.\n\nI work across the whole stack, from system design and infrastructure as code to the UI and go-to-market. I'm open to full-time engineering roles and contract work, remote or on-site, anywhere in the world.",
+    "I'm a software engineer and architect with a [Master of Engineering in Computer Software Engineering](/#education) from the École Nationale Supérieure Polytechnique de Yaoundé.\n\nIn 2023 I co-founded [OddsFantasy](https://oddsfantasy.com), a trading terminal for sports prediction markets. I designed its serverless microservices architecture on AWS, built a sub-600 ms execution engine with automated take-profit and stop-loss, and lead a team of five. Alongside it we run [OddsFantasy Prop](https://trade.oddsfantasy.com), a prop firm for prediction-market traders, and I also co-founded [Ofidely](https://ofidely.com), a loyalty program and WhatsApp CRM for local businesses.\n\nI work across the whole stack, from system design and infrastructure as code to the UI and go-to-market. I'm open to full-time engineering roles and contract work, remote or on-site, anywhere in the world.",
   avatarUrl: "/me.jpg",
   resumeUrl: "/cadell-griffith-resume.pdf",
   skills: [
@@ -58,7 +58,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/cadell-griffith-4314b5246/",
+        url: "https://www.linkedin.com/in/cadellgriffith/",
         icon: Icons.linkedin,
         navbar: true,
       },
