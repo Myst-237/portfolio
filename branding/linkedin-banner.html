@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LinkedIn banner</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1584px; height: 396px; }
+  body {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    background:
+      radial-gradient(ellipse 60% 120% at 85% 40%, rgba(59,130,246,0.18), transparent 60%),
+      linear-gradient(135deg, #07090d 0%, #0d1117 55%, #0a0f1a 100%);
+    color: #f5f7fa;
+    position: relative;
+    overflow: hidden;
+  }
+  /* dot grid, echoing the portfolio's flickering grid */
+  .grid {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.09) 1.2px, transparent 1.2px);
+    background-size: 22px 22px;
+    mask-image: linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.25) 70%);
+  }
+  /* faint latency trace across the banner */
+  svg.trace { position: absolute; left: 0; right: 0; bottom: 6px; width: 100%; height: 90px; opacity: 0.35; }
+  .content {
+    position: absolute; right: 96px; top: 50%; transform: translateY(-50%);
+    width: 860px; text-align: right;
+  }
+  .label {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 17px; letter-spacing: 0.22em; text-transform: uppercase; color: #93c5fd;
+  }
+  h1 { font-size: 46px; line-height: 1.12; font-weight: 700; letter-spacing: -0.02em; margin-top: 14px; }
+  h1 .muted { color: #9aa4b2; font-weight: 600; }
+  .chips { margin-top: 22px; display: flex; justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    font-size: 16px; font-weight: 500; color: #d7dde5;
+    border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.04);
+    padding: 7px 14px; border-radius: 999px;
+  }
+  .url { margin-top: 20px; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 19px; color: #e5e7eb; }
+  .url b { color: #60a5fa; font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <svg class="trace" viewBox="0 0 1584 120" preserveAspectRatio="none">
+    <polyline fill="none" stroke="#60a5fa" stroke-width="2"
+      points="0,80 120,80 150,30 180,80 420,80 440,60 460,80 640,80 670,20 700,80 860,80 880,55 900,80 1584,80"/>
+  </svg>
+  <div class="content">
+    <div class="label">Software Engineer &amp; Architect</div>
+    <h1>Fast, reliable systems that cost<br><span class="muted">very little to run.</span></h1>
+    <div class="chips">
+      <span class="chip">AWS &amp; Serverless</span>
+      <span class="chip">Distributed Systems</span>
+      <span class="chip">Low-Latency Trading</span>
+      <span class="chip">TypeScript · Python</span>
+    </div>
+    <div class="url"><b>cadellgriffith.com</b> · Open to roles &amp; contracts</div>
+  </div>
+</body>
+</html>
