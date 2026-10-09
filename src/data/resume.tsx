@@ -11,7 +11,7 @@ import { Java } from "@/components/ui/svgs/java";
 export const DATA = {
   name: "Cadell Griffith",
   initials: "CG",
-  url: "https://cadellgriffith.vercel.app",
+  url: "https://cadellgriffith.com",
   location: "Yaoundé, Cameroon",
   locationLink: "https://www.google.com/maps/place/Yaound%C3%A9",
   description:

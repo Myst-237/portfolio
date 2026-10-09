@@ -1,7 +1,7 @@
 # Cadell Griffith — Portfolio
 
 Personal portfolio of Cadell Griffith, technical founder and software architect.
-Live at https://cadellgriffith.vercel.app
+Live at https://cadellgriffith.com
 
 Built with Next.js, Tailwind CSS, shadcn/ui and [Magic UI](https://magicui.design), based on the
 [portfolio template by Dillion Verma](https://github.com/dillionverma/portfolio) (MIT).
