@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cadell Griffith — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0.42in 0.5in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; font-size: 9.2pt; line-height: 1.33; color: #1f2328; }
+  a { color: inherit; text-decoration: none; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1.5px solid #111; padding-bottom: 8px; }
+  h1 { font-size: 22pt; font-weight: 700; letter-spacing: -0.02em; color: #111; line-height: 1.1; }
+  .role { font-size: 10.5pt; font-weight: 500; color: #444; margin-top: 2px; }
+  .contact { text-align: right; font-size: 8.8pt; line-height: 1.5; color: #333; }
+  section { margin-top: 9px; }
+  h2 { font-size: 8.6pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #111; margin-bottom: 5px; }
+  .summary { color: #333; }
+  .job { margin-bottom: 6px; break-inside: avoid; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .job-title { font-weight: 600; color: #111; font-size: 10pt; }
+  .job-title .org { font-weight: 600; }
+  .job-title .sep { color: #999; font-weight: 400; margin: 0 4px; }
+  .dates { font-size: 8.8pt; color: #555; white-space: nowrap; }
+  .meta { font-size: 8.6pt; color: #666; margin-top: 1px; }
+  ul { margin: 3px 0 0 14px; }
+  li { margin-top: 1.5px; }
+  .skills { display: grid; grid-template-columns: 128px 1fr; row-gap: 3px; }
+  .skills dt { font-weight: 600; color: #111; }
+  .skills dd { color: #333; }
+  .edu { display: flex; justify-content: space-between; align-items: baseline; }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Cadell Griffith</h1>
+      <div class="role">Software Architect · Technical Co-Founder</div>
+    </div>
+    <div class="contact">
+      <div>Yaoundé, Cameroon · Open to roles in Canada and remote</div>
+      <div><a href="mailto:cadellgriffith@gmail.com">cadellgriffith@gmail.com</a> · <a href="https://cadellgriffith.vercel.app">cadellgriffith.vercel.app</a></div>
+      <div><a href="https://www.linkedin.com/in/cadell-griffith-4314b5246/">linkedin.com/in/cadell-griffith-4314b5246</a> · <a href="https://github.com/Myst-237">github.com/Myst-237</a></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Software architect and technical co-founder with an MEng in Computer Software Engineering. Co-founded OddsFantasy, a trading terminal for sports prediction markets built on a serverless microservices architecture on AWS, and Ofidely, a loyalty and CRM platform that runs on WhatsApp. Works across the whole stack, from system design and infrastructure as code to the UI and go-to-market.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title"><span class="org">OddsFantasy</span><span class="sep">|</span>Co-Founder &amp; Software Architect</div>
+        <div class="dates">Jun 2023 – Present</div>
+      </div>
+      <div class="meta">Yaoundé, Cameroon · Hybrid · <a href="https://oddsfantasy.com">oddsfantasy.com</a></div>
+      <ul>
+        <li>Led the architecture and technical development of a trading terminal for sports prediction markets.</li>
+        <li>Designed and deployed a fully serverless microservices system on AWS, built for scalability and reliability.</li>
+        <li>Built a low-latency execution engine (&lt;600 ms) for trading operations, with take-profit and stop-loss automation.</li>
+        <li>Developed the data pipelines and analytics behind the positive-EV and arbitrage scanners and trade tracking.</li>
+        <li>Ran the infrastructure for ~$50/month at 1,000+ monthly active users; reached 100+ users in the first month.</li>
+        <li>Managed a team of 5 and owned technical decisions end to end.</li>
+        <li>Launched OddsFantasy Prop (<a href="https://trade.oddsfantasy.com">trade.oddsfantasy.com</a>), a prop firm for prediction-market traders, on WordPress and WooCommerce with subscriptions, Stripe and crypto payments.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title"><span class="org">Ofidely</span><span class="sep">|</span>Co-Founder &amp; Software Architect</div>
+        <div class="dates">Jul 2026 – Present</div>
+      </div>
+      <div class="meta">Yaoundé, Cameroon · Hybrid · <a href="https://ofidely.com">ofidely.com</a></div>
+      <ul>
+        <li>Built a loyalty program and customer CRM on WhatsApp for local businesses: customers scan a QR code at the counter to collect points and rewards, with no app to download.</li>
+        <li>Built the Next.js business dashboard for clients, QR codes, risk rules, redemptions and messaging all customers.</li>
+        <li>Integrated the WhatsApp Business Cloud API (OTP sign-in, webhooks, text and image replies) on a DynamoDB single-table design with S3 and Auth.js.</li>
+        <li>Shipped a bilingual English/French product, deployed on a hardened VPS with Ansible, NGINX and Let's Encrypt.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title"><span class="org">Ufipay</span><span class="sep">|</span>Software Engineer Intern</div>
+        <div class="dates">Jun 2022 – Oct 2023</div>
+      </div>
+      <div class="meta">Yaoundé, Cameroon · On-site</div>
+      <ul>
+        <li>Built the client and account management system for Leel Cash Pay, a financial app: client profiles, account creation, deposits, withdrawals and transfers (Java EE, MVC, JSF, Oracle Database).</li>
+        <li>Researched value-added services for SIM cards and Java Cards using the Taisys thin SIM and the SIMoME API.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title"><span class="org">École Nationale Supérieure Polytechnique de Yaoundé</span><span class="sep">|</span>Student Software Engineer</div>
+        <div class="dates">Oct 2021 – Jan 2023</div>
+      </div>
+      <div class="meta">Yaoundé, Cameroon · On-site</div>
+      <ul>
+        <li>Built a multisig crypto wallet for secure, collaborative transactions on Ethereum, with Solidity smart contracts and a Vue.js front end.</li>
+        <li>Built a web app that digitizes hospital workflows: patient registration, doctor appointments, consultation queues and payments.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt><dd>TypeScript, JavaScript, Python, Java, Solidity, SQL</dd>
+      <dt>Frameworks</dt><dd>Next.js, React, Node.js, Vue.js, Celery, Java EE / JSF</dd>
+      <dt>Cloud &amp; DevOps</dt><dd>AWS (serverless, DynamoDB, S3), Terraform, Docker, Ansible, NGINX, CI/CD</dd>
+      <dt>Data &amp; messaging</dt><dd>MongoDB, DynamoDB, RabbitMQ, Oracle Database</dd>
+      <dt>Architecture</dt><dd>Distributed systems, microservices, serverless, system design, low-latency trading systems</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu">
+      <div><span class="job-title">École Nationale Supérieure Polytechnique de Yaoundé</span> — Master of Engineering (MEng), Computer Software Engineering · Grade A</div>
+      <div class="dates">2018 – 2023</div>
+    </div>
+  </section>
+</body>
+</html>

@@ -19,3 +19,9 @@ pnpm dev
 ```
 
 Pushing to `main` redeploys the site on Vercel.
+
+## Resume PDF
+
+The downloadable resume (`public/cadell-griffith-resume.pdf`) is printed from
+[`resume/resume.html`](./resume/resume.html). After editing the HTML, open it in Chrome and
+Print → Save as PDF (Letter, margins "Default"), or render it headlessly with Playwright's `page.pdf()`.

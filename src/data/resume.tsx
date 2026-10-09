@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon } from "lucide-react";
+import { FileTextIcon, HomeIcon } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -15,10 +15,11 @@ export const DATA = {
   location: "Yaoundé, Cameroon",
   locationLink: "https://www.google.com/maps/place/Yaound%C3%A9",
   description:
-    "Technical founder and software architect. I build trading infrastructure, distributed systems on AWS, and products people pay for.",
+    "Technical co-founder and software architect. I build trading infrastructure, distributed systems on AWS, and products people pay for.",
   summary:
-    "I'm a software architect and technical founder with a [Master of Engineering in Computer Software Engineering](/#education) from the École Nationale Supérieure Polytechnique de Yaoundé.\n\nSince 2023 I've been building [OddsFantasy](https://oddsfantasy.com), a trading terminal for sports prediction markets. I designed its serverless microservices architecture on AWS, built a sub-600 ms execution engine with automated take-profit and stop-loss, and lead a team of five. Alongside it I run [OddsFantasy Prop](https://trade.oddsfantasy.com), a prop firm for prediction-market traders, and [Ofidely](https://ofidely.com), a loyalty program and WhatsApp CRM for local businesses.\n\nI work across the whole stack, from system design and infrastructure as code to the UI and go-to-market. I'm open to software architecture and senior engineering roles in Canada and remote.",
+    "I'm a software architect and technical co-founder with a [Master of Engineering in Computer Software Engineering](/#education) from the École Nationale Supérieure Polytechnique de Yaoundé.\n\nIn 2023 I co-founded [OddsFantasy](https://oddsfantasy.com), a trading terminal for sports prediction markets. I designed its serverless microservices architecture on AWS, built a sub-600 ms execution engine with automated take-profit and stop-loss, and lead a team of five. Alongside it we run [OddsFantasy Prop](https://trade.oddsfantasy.com), a prop firm for prediction-market traders, and I also co-founded [Ofidely](https://ofidely.com), a loyalty program and WhatsApp CRM for local businesses.\n\nI work across the whole stack, from system design and infrastructure as code to the UI and go-to-market. I'm open to software architecture and senior engineering roles in Canada and remote.",
   avatarUrl: "/me.jpg",
+  resumeUrl: "/cadell-griffith-resume.pdf",
   skills: [
     { name: "TypeScript", icon: Typescript },
     { name: "Next.js", icon: NextjsIconDark },
@@ -39,7 +40,10 @@ export const DATA = {
     { name: "Distributed Systems", icon: undefined },
     { name: "System Design", icon: undefined },
   ],
-  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/cadell-griffith-resume.pdf", icon: FileTextIcon, label: "Resume" },
+  ],
   contact: {
     email: "cadellgriffith@gmail.com",
     social: {
@@ -70,7 +74,7 @@ export const DATA = {
       href: "https://oddsfantasy.com",
       badges: [],
       location: "Yaoundé, Cameroon · Hybrid",
-      title: "Founder & Software Architect",
+      title: "Co-Founder & Software Architect",
       logoUrl: "/oddsfantasy.png",
       start: "Jun 2023",
       end: "Present",
@@ -82,7 +86,7 @@ export const DATA = {
       href: "https://ofidely.com",
       badges: [],
       location: "Yaoundé, Cameroon",
-      title: "Founder & Software Architect",
+      title: "Co-Founder & Software Architect",
       logoUrl: "/ofidely.svg",
       start: "Jul 2026",
       end: "Present",

@@ -8,7 +8,8 @@ import Markdown from "react-markdown";
 import ContactSection from "@/components/section/contact-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
-import { ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowUpRight, Download, Mail } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -30,6 +31,22 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                <div className="flex flex-wrap gap-2 pt-3">
+                  <Button asChild className="rounded-xl">
+                    <a href={DATA.resumeUrl} download>
+                      <Download className="size-4 mr-2" aria-hidden />
+                      Download resume
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" className="rounded-xl">
+                    <a href={`mailto:${DATA.contact.email}`}>
+                      <Mail className="size-4 mr-2" aria-hidden />
+                      Contact me
+                    </a>
+                  </Button>
+                </div>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
