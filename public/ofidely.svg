@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Ofidely</title>
+  <rect width="512" height="512" fill="#17252a" rx="96"/>
+  <g fill="none" stroke="#fffef9" stroke-linecap="round" stroke-linejoin="round" stroke-width="28">
+    <rect x="142" y="132" width="72" height="72" rx="12"/>
+    <rect x="298" y="132" width="72" height="72" rx="12"/>
+    <rect x="142" y="308" width="72" height="72" rx="12"/>
+    <path d="M298 308h72v72h-72z"/>
+    <path d="M256 132v72m0 104v72M142 256h72m84 0h72"/>
+  </g>
+</svg>
